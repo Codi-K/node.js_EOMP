@@ -1,6 +1,38 @@
 <template>
   <div>
-
+    <nav id="full_navbar_styling" class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <!-- Navbar Logo -->
+        <a class="navbar-brand" href="#">
+          <img id="navbar_logo_image_styling" src="https://i.postimg.cc/QC2BZ7zX/STELLAR-removebg-preview.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          
+          <!-- links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link class="nav-link" aria-current="page" to="/" id="link_styling">HOME</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" aria-current="page" to="/about" id="link_styling">ABOUT</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" aria-current="page" to="/products" id="link_styling">PRODUCTS</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" aria-current="page" to="/admin" id="link_styling">ADMIN</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" aria-current="page" to="/contact" id="link_styling">CONTACT US</router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
 </template>
 

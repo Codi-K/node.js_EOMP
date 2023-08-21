@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital@1&display=swap');
+
+
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+/* navbar */
+#full_navbar_styling {
+    box-shadow: 0px 0px 10px black;
+    height: 6rem;
+}
+
+#navbar_logo_image_styling {
+    height: 5rem;
+}
+
+/* links */
+#link_styling {
+    font-weight: 100;
+    color: black;
+}
+#link_styling:hover {
+    font-weight: bold;
+}
