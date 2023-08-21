@@ -52,20 +52,16 @@ class Users {
             emailAdd,
             userPass,
           });
-          res.cookie("OhneUser", token, {
-            maxAge: 3600000,
-            httpOnly: true,
-          });
           if (cResult) {
             res.json({
-              msg: "You are successfully Logged In",
+              msg: "You have been successfully logged in",
               token,
               result: result[0],
             });
           } else {
             res.json({
               status: res.statusCode,
-              msg: "Password is Invalid or you have not registered",
+              msg: "Your password is invalid or you have not registered",
             });
           }
         });
@@ -86,23 +82,24 @@ class Users {
     db.query(query, [data], (err) => {
       if (err) throw err;
       let token = createToken(user);
-      res.cookie("LegitUser", token, {
-        maxAge: 7200000, // milisecond = 2 hours
-        httpOnly: true, 
-      });
       res.json({
         status: res.statusCode,
-        msg: "You are now registered",
+        token,
+        msg: "You have been registered",
       });
     });
   }
   updateUser(req, res) {
+    const data = req.body;
+    if (data.userPass) {
+      data.userPass = hashSync(data.userPass, 10);
+    }
     const query = `
         UPDATE Users
         SET ?
         WHERE userID = ?;
         `;
-    db.query(query, [res.body, res.params.id], (err) => {
+    db.query(query, [data, res.params.id], (err) => {
       if (err) throw err;
       res.json({
         status: statusCode,
@@ -126,4 +123,3 @@ class Users {
 }
 
 module.exports = Users;
-
