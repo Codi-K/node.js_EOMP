@@ -34,7 +34,7 @@ class Users {
   login(req, res) {
     const { emailAdd, userPass } = req.body;
     const query = `
-        SELECT userID, firstName, lastName, userAge, gender, userRole, emailAdd, userProfile
+        SELECT userID, firstName, lastName, userAge, gender, userRole, emailAdd, userPass, userProfile
         FROM Users
         WHERE emailAdd = '${emailAdd}';
         `;
@@ -91,32 +91,34 @@ class Users {
   }
   updateUser(req, res) {
     const data = req.body;
+    //encrypt the new password if changed
     if (data.userPass) {
-      data.userPass = hashSync(data.userPass, 10);
+      data.userPass = hashSync(data.userPass, 15);
     }
+
     const query = `
         UPDATE Users
         SET ?
         WHERE userID = ?;
         `;
-    db.query(query, [data, res.params.id], (err) => {
+    db.query(query, [data, req.params.id], (err) => {
       if (err) throw err;
       res.json({
-        status: statusCode,
-        msg: "A User's details has been updated",
+        status: res.statusCode,
+        msg: "The user record was updated",
       });
     });
   }
   deleteUser(req, res) {
     const query = `
         DELETE FROM Users
-        WHERE userID = ${res.params.id};
+        WHERE userID = ${req.params.id};
         `;
     db.query(query, (err) => {
       if (err) throw err;
       res.json({
         status: res.statusCode,
-        msg: "A User has been deleted",
+        msg: "A user record was deleted",
       });
     });
   }

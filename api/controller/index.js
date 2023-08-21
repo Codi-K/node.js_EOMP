@@ -24,7 +24,7 @@ routes.post("/login", bodyParser.json(), (req, res) => {
   users.login(req, res);
 });
 
-routes.put("/user/:id", bodyParser.json(), (req, res) => {
+routes.patch("/user/:id", bodyParser.json(), (req, res) => {
   users.updateUser(req, res);
 });
 
@@ -46,7 +46,7 @@ routes.post("/product", bodyParser.json(), (req, res) => {
   watchs.resgister(req, res);
 });
 
-routes.put("/product/:id", bodyParser.json(), (req, res) => {
+routes.patch("/product/:id", bodyParser.json(), (req, res) => {
   watchs.updateUser(req, res);
 });
 
