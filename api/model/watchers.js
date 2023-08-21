@@ -1,1 +1,3 @@
-//watchers table
+class Watchs {}
+
+module.exports = Watchs;

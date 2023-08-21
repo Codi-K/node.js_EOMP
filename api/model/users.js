@@ -77,7 +77,7 @@ class Users {
   }
   async resgister(req, res) {
     const data = req.body;
-    data.userPass = await hash(data.userPass, 15);
+    data.userPass = await hash(data.userPass, 10);
     const user = {
       emailAdd: data.emailAdd,
       userPass: data.userPass,
