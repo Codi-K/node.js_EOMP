@@ -20,6 +20,10 @@ routes.post("/user", bodyParser.json(), (req, res) => {
   users.resgister(req, res);
 });
 
+routes.post("/login", bodyParser.json(), (req, res) => {
+  users.login(req, res);
+});
+
 routes.put("/user/:id", bodyParser.json(), (req, res) => {
   users.updateUser(req, res);
 });

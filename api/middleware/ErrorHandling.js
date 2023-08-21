@@ -11,4 +11,4 @@ function errorHandle(err, req, res, next) {
   next();
 }
 
-module.exports = { errorHandle }
+module.exports = errorHandle 

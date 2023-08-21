@@ -5,7 +5,7 @@ const { createToken } = require("../middleware/AuthenticateUser");
 class Users {
   fetchUsers(req, res) {
     const query = `
-        SELECT userID, firstName, lastName, userAge, gender, userRole, emailAdd, profileUrl
+        SELECT userID, firstName, lastName, userAge, gender, userRole, emailAdd, userProfile
         FROM Users;
         `;
     db.query(query, (err, results) => {
@@ -18,7 +18,7 @@ class Users {
   }
   fetchUser(req, res) {
     const query = `
-        SELECT userID, firstName, lastName, userAge, gender, userRole, emailAdd, profileUrl
+        SELECT userID, firstName, lastName, userAge, gender, userRole, emailAdd, userProfile
         FROM Users
         WHERE userID = ${req.params.id};
         `;
@@ -33,9 +33,8 @@ class Users {
   }
   login(req, res) {
     const { emailAdd, userPass } = req.body;
-    // query
     const query = `
-        SELECT userID, firstName, lastName, userAge, gender, userRole, emailAdd, profileUrl
+        SELECT userID, firstName, lastName, userAge, gender, userRole, emailAdd, userProfile
         FROM Users
         WHERE emailAdd = '${emailAdd}';
         `;
@@ -44,31 +43,29 @@ class Users {
       if (!result?.length) {
         res.json({
           status: res.statusCode,
-          msg: "You provided a wrong email.",
+          msg: "Your Email Address is incorrect.",
         });
       } else {
         await compare(userPass, result[0].userPass, (cErr, cResult) => {
           if (cErr) throw cErr;
-          // Create a token
           const token = createToken({
             emailAdd,
             userPass,
           });
-          // Save a token
-          res.cookie("LegitUser", token, {
+          res.cookie("OhneUser", token, {
             maxAge: 3600000,
             httpOnly: true,
           });
           if (cResult) {
             res.json({
-              msg: "Logged in",
+              msg: "You are successfully Logged In",
               token,
               result: result[0],
             });
           } else {
             res.json({
               status: res.statusCode,
-              msg: "Invalid password or you have not registered",
+              msg: "Password is Invalid or you have not registered",
             });
           }
         });
