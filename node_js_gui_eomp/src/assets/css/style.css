@@ -31,7 +31,10 @@
 #link_styling:hover {
     font-weight: bold;
 }
-
+nav a.router-link-exact-active {
+  font-weight: bold;
+  color: black;
+}
 /* scrollbar */
 ::-webkit-scrollbar {
     display: none;
@@ -94,8 +97,8 @@
 #sneak_peek {
   background-color: #0f1014;
   margin-top: 1rem;
-  padding: 3rem;
-  height: 75vh;
+  padding: 2rem;
+  height: 70vh;
 }
 
 #sneak_peek_text {
