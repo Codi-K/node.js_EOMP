@@ -1,8 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const routes = express.Router();
-const { verifyToken } = require("../middleware/AuthenticateUser");
-
 
 const { users, watchs } = require("../model");
 
