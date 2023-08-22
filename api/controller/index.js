@@ -52,6 +52,45 @@ routes.delete("/product/:id", (req, res) => {
   watchs.deleteWatch(req, res);
 });
 
+//========= Sort router ==========
+
+
+routes.get("/products/name", (req, res) => {
+  watchs.sortName(req, res);
+});
+
+routes.get("/products/price", (req, res) => {
+  watchs.sortPrice(req, res);
+});
+
+//========= Filter router ==========
+
+routes.get("/products/rolex", (req, res) => {
+  watchs.filterRolex(req, res);
+});
+
+routes.get("/products/ap", (req, res) => {
+  watchs.filterAP(req, res);
+});
+
+routes.get("/products/pp", (req, res) => {
+  watchs.filterPP(req, res);
+});
+
+routes.get("/products/hublot", (req, res) => {
+  watchs.filterHublot(req, res);
+});
+
+routes.get("/products/th", (req, res) => {
+  watchs.filterTH(req, res);
+});
+
+//========= Search router ==========
+
+routes.get("/search/:id", (req, res) => {
+  watchs.searchWatch(req, res);
+});
+
 module.exports = {
   express,
   routes,
