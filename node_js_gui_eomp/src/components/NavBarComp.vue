@@ -18,7 +18,7 @@
               <router-link class="nav-link" aria-current="page" to="/">HOME</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" aria-current="page" to="/about">ABOUT</router-link>
+              <router-link class="nav-link" aria-current="page" to="/about">ABOUT US</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link" aria-current="page" to="/products">PRODUCTS</router-link>

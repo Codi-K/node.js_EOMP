@@ -29,32 +29,5 @@
 </script>
 
 <style scoped>
-#line_space {
-    border-top: 2px solid black;
-    margin: 2rem 10rem 2rem;
-}
-
-#footer_positioning {
-    display: flex;
-    flex-direction: column;
-}
-
-#links_for_footer {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 12rem;
-    margin-left: 12rem;
-}
-
-#south_africa_text {
-    text-decoration: none;
-    color: #2c3e50;
-}
-
-#find_store_text {
-    text-decoration: underline 1px;
-    color: #2c3e50;
-}
-
 
 </style>
