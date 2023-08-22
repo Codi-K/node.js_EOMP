@@ -93,7 +93,7 @@ class Users {
     const data = req.body;
     //encrypt the new password if changed
     if (data.userPass) {
-      data.userPass = hashSync(data.userPass, 15);
+      data.userPass = hashSync(data.userPass, 10);
     }
 
     const query = `
