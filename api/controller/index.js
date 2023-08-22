@@ -20,7 +20,7 @@ routes.post("/user", bodyParser.json(), (req, res) => {
   users.resgister(req, res);
 });
 
-routes.post("/login", bodyParser.json(), (req, res) => {
+routes.post("/login" ,bodyParser.json(), (req, res) => {
   users.login(req, res);
 });
 
@@ -35,23 +35,23 @@ routes.delete("/user/:id", (req, res) => {
 //========= Watch router ==========
 
 routes.get("/products", (req, res) => {
-  watchs.fetchUsers(req, res);
+  watchs.fetchWatchs(req, res);
 });
 
 routes.get("/product/:id", (req, res) => {
-  watchs.fetchUser(req, res);
+  watchs.fetchWatch(req, res);
 });
 
 routes.post("/product", bodyParser.json(), (req, res) => {
-  watchs.resgister(req, res);
+  watchs.addWatch(req, res);
 });
 
 routes.patch("/product/:id", bodyParser.json(), (req, res) => {
-  watchs.updateUser(req, res);
+  watchs.updateWatch(req, res);
 });
 
 routes.delete("/product/:id", (req, res) => {
-  watchs.deleteUser(req, res);
+  watchs.deleteWatch(req, res);
 });
 
 module.exports = {
