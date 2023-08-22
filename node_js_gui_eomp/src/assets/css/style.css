@@ -16,7 +16,6 @@
 
 /* navbar */
 #full_navbar_styling {
-    box-shadow: 0px 0px 10px black;
     height: 6rem;
 }
 
@@ -31,4 +30,88 @@
 }
 #link_styling:hover {
     font-weight: bold;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* home page */
+#image_for_landing_page {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: black;
+}
+
+#landing_page_image {
+  width: 15rem;
+}
+
+#landing_page_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f6da9f;
+  padding: 2rem;
+}
+
+#promo_and_sales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+#deal_1, #deal_2 {
+  height: 16rem;
+  width: 40%;
+  border-top: 2px solid black;
+}
+
+#deal_1_text {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  color: black;
+  font-weight: 400;
+}
+
+#deal_2_text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  color: black;
+  font-weight: 400;
+}
+
+#sneak_peek {
+  background-color: #0f1014;
+  margin-top: 1rem;
+  padding: 3rem;
+  height: 75vh;
+}
+
+#sneak_peek_text {
+  color: #f6da9f;
+}
+#watch_image_carousel {
+  height: 25rem;
+}
+
+#carouselExample {
+  width: 30%;
+}
+
+#carouosel_watch_div {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-content: center;
 }
