@@ -38,7 +38,7 @@
     <!-- card 1 -->
     <div id="images_of_leadership">
 
-      <div class="card" style="width: 18rem;">
+      <div class="card" id="card_border_none" style="width: 18rem;">
         <img id="image_of_company_employees" src="https://i.postimg.cc/NfCWKR47/C12-C2-Codi-Kader-1-removebg-preview.png" class="card-img-top" alt="codi_kader_image">
         <div class="card-body" id="card_text_for_leadership">
           <h3>
@@ -49,7 +49,7 @@
       </div>
       
       <!-- card 2 -->
-      <div class="card" style="width: 18rem;">
+      <div class="card" id="card_border_none" style="width: 18rem;">
         <img id="image_of_company_employees" src="https://i.postimg.cc/CM7yV3n2/C12-Keeno-Fourie-1-removebg-preview.png" class="card-img-top" alt="keeno_fourie_image">
         <div class="card-body" id="card_text_for_leadership">
           <h3>
@@ -166,98 +166,5 @@
 </script>
 
 <style scoped>
-#about_sub-title_headings {
-  color: black;
-  text-align: left;
-  margin-left: 2rem;
-}
 
-#card_title_heading {
-  color: #ffc851;
-}
-
-#helpline_heading {
-  color: #ffc851;
-}
-#card_title_heading {
-  color: #ffc851;
-}
-
-#line_space_2 {
-  border-top: 1px solid black;
-  margin: 1rem 2rem 1rem;
-}
-
-#images_of_leadership {
-  display: flex;
-  margin: 2rem;
-  justify-content: center;
-}
-
-.card {
-  border: none;
-  margin: 1rem;
-}
-
-#image_of_company_employees {
-  border: 1.5px solid black;
-  border-radius: 0rem;
-}
-
-#card_text_for_leadership {
-  text-align: left;
-  font-weight: bold;
-}
-
-#leadership_names {
-  font-weight: 900;
-}
-
-#new_watch_news {
-  text-align: left;
-}
-
-#card_for_the_news {
-  border: 1.5px solid black;
-  padding: 0.5rem;
-}
-
-#news_cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#image_of_partners {
-  margin: 2rem;
-}
-
-#helpline {
-  border: 1.5px solid black;
-  width: fit-content;
-  padding: 2rem;
-  color: black;
-}
-
-#helpline_positioning {
-  display: flex;
-  justify-content: center;
-}
-
-#about_us_paragraph {
-  width: 60%;
-  text-align: left;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-}
-
-#about_us_company_image {
-  height: 15rem;
-}
-
-#about_position {
-  display: flex;
-  justify-content: center;
-}
 </style>

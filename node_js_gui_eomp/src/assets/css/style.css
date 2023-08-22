@@ -95,7 +95,7 @@ nav a.router-link-exact-active {
 }
 
 #sneak_peek {
-  background-color: #0f1014;
+  background-color: black;
   margin-top: 1rem;
   padding: 2rem;
   height: 70vh;
@@ -152,3 +152,171 @@ nav a.router-link-exact-active {
 
 /* about page */
 
+#about_sub-title_headings {
+  color: black;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+#card_title_heading {
+  color: #ffc851;
+}
+
+#helpline_heading {
+  color: #ffc851;
+}
+#card_title_heading {
+  color: #ffc851;
+}
+
+#line_space_2 {
+  border-top: 1px solid black;
+  margin: 1rem 2rem 1rem;
+}
+
+#images_of_leadership {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.card {
+  border: none;
+  margin: 1rem;
+}
+
+#card_border_none {
+  border: none;
+}
+
+#image_of_company_employees {
+  border: 1.5px solid black;
+  border-radius: 0rem;
+}
+
+#card_text_for_leadership {
+  text-align: left;
+  font-weight: bold;
+}
+
+#leadership_names {
+  font-weight: 900;
+}
+
+#new_watch_news {
+  text-align: left;
+}
+
+#card_for_the_news {
+  border: 1.5px solid black;
+  padding: 0.5rem;
+}
+
+#news_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#image_of_partners {
+  margin: 2rem;
+}
+
+#helpline {
+  border: 1.5px solid black;
+  width: fit-content;
+  padding: 2rem;
+  color: black;
+}
+
+#helpline_positioning {
+  display: flex;
+  justify-content: center;
+}
+
+#about_us_paragraph {
+  width: 60%;
+  text-align: left;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#about_us_company_image {
+  height: 15rem;
+}
+
+#about_position {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* products */
+
+
+#welcome_products {
+  display: flex;
+  align-items: center;
+}
+
+#welcome_product_image {
+  height: 20rem;
+}
+
+#products_sub-heading {
+  color: #ffc851;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+#products_welcome_text {
+  padding-left: 2rem;
+  padding-right: 4rem;
+  text-align: left;
+}
+
+#heading_displayed_products {
+  color: black;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+#product_price {
+  color: red;
+}
+
+#watches_card_styling {
+  border: none;
+  border-bottom: 1px solid;
+}
+
+#products_displaying {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0.5rem;
+}
+
+#all_buttons_display {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-evenly;
+}
+
+.dropdown-item:hover{
+  background-color: #ffc851;
+  color: black;
+}
+
+#search_button_style {
+  background-color: transparent;
+}
+
+#search_button_style:hover {
+  color: black;
+  background-color: #ffc851;
+}
+
+
+/* contact us */
