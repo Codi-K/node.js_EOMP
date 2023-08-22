@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav id="full_navbar_styling" class="navbar navbar-expand-lg bg-white">
+    <nav id="full_navbar_styling" class="navbar navbar-expand-lg bg-white nav-underline">
       <div class="container-fluid">
         <!-- Navbar Logo -->
         <a class="navbar-brand" href="#">
@@ -15,19 +15,19 @@
           <!-- links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <router-link class="nav-link" aria-current="page" to="/" id="link_styling">HOME</router-link>
+              <router-link class="nav-link" aria-current="page" to="/">HOME</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" aria-current="page" to="/about" id="link_styling">ABOUT</router-link>
+              <router-link class="nav-link" aria-current="page" to="/about">ABOUT</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" aria-current="page" to="/products" id="link_styling">PRODUCTS</router-link>
+              <router-link class="nav-link" aria-current="page" to="/products">PRODUCTS</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" aria-current="page" to="/admin" id="link_styling">ADMIN</router-link>
+              <router-link class="nav-link" aria-current="page" to="/admin">ADMIN</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" aria-current="page" to="/contact" id="link_styling">CONTACT US</router-link>
+              <router-link class="nav-link" aria-current="page" to="/contact">CONTACT US</router-link>
             </li>
           </ul>
         </div>
