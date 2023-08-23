@@ -11,7 +11,9 @@ export default createStore({
     // users
     users: null,
     // msg
-    msg: null
+    msg: null,
+    // spinner
+    spinner: null
   },
 
   getters: {
@@ -29,6 +31,10 @@ export default createStore({
     // setMsg
     setMsg(state, msg) {
       state.msg = msg
+    },
+    // spinner
+    setSpinner(state, value) {
+      state.spinner = value;
     }
   },
 
