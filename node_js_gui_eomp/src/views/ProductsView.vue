@@ -15,7 +15,7 @@
         <!-- displaying products -->
         <div id="products_page">
             <h1 id="heading_displayed_products">Get a watch that suits you...</h1>
-          <div id="products_displaying">
+          <div id="products_displaying" v-if="watches">
               <div v-for="watches in watches" :key="watches.watchID" class="card text-bg-transparent" id="watches_card_styling">
                   <img id="watches_cards_images" :src="watches.watchUrl" class="card-img" :alt="watches.watchName">
                   <div class="card-img-overlay" id="product_text_display">
@@ -25,13 +25,24 @@
                   </div>
                 </div>
           </div>
+
+          <!-- spinner -->
+          <div v-else class="row justify-content-center gap-3">
+            <SpinnerComp/>
+          </div>
+
         </div>
 
     </div>
 </template>
 
 <script>
+import SpinnerComp from '@/components/SpinnerComp.vue';
+
 export default {
+    components: {
+        SpinnerComp
+    },
     computed: {
       watches() {
           return this.$store.state.watches
