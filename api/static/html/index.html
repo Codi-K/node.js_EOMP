@@ -1,17 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://i.postimg.cc/QC2BZ7zX/STELLAR-removebg-preview.png" type="image/x-icon">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- custom css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>StellarWrist - Router Description</title>
 </head>
-<body>
-    <h2>Router Description</h2>
 
-    
+<body>
+    <main class="container text-white">
+        <div class="container">
+            <h2 class="m-5 text-center text-decoration-underline">Router Descriptions</h2>
+        </div>
+        <!-- Home router -->
+        <div class="container">
+            <h3 class="m-2"> Home</h3>
+        </div>
+
+        <div class="container">
+            <table class="table table-dark table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">HTTP Methods</th>
+                        <th scope="col">Paths</th>
+                        <th scope="col">Descriptions</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th>GET</th>
+                        <td>/ or /home</td>
+                        <td>This router takes you to the Home Page of the API</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Users Router -->
+        <div class="container">
+            <h3 class="m-2"> Users</h3>
+        </div>
+
+        <div class="container">
+            <table class="table table-dark table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">HTTP Methods</th>
+                        <th scope="col">Paths</th>
+                        <th scope="col">Descriptions</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th>GET</th>
+                        <td>/users</td>
+                        <td>This router shows all the users in the database</td>
+                    </tr>
+                    <tr>
+                        <th>GET</th>
+                        <td>/user/:id</td>
+                        <td>This router shows a single user when a user requests a ID</td>
+                    </tr>
+                    <tr>
+                        <th>POST</th>
+                        <td>/user</td>
+                        <td>This router allows us to register a new user into the database</td>
+                    </tr>
+                    <tr>
+                        <th>POST</th>
+                        <td>/login</td>
+                        <td>This router allows us to login to the website</td>
+                    </tr>
+                    <tr>
+                        <th>PATCH</th>
+                        <td>/user/:id</td>
+                        <td>This router allows us to update a users details in the database</td>
+                    </tr>
+                    <tr>
+                        <th>DELETE</th>
+                        <td>/user/:id</td>
+                        <td>This router allows us delete user and their details in the database</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Products router  -->
+        <div class="container">
+            <h3 class="m-2"> Products</h3>
+        </div>
+
+        <div class="container">
+            <table class="table table-dark table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">HTTP Methods</th>
+                        <th scope="col">Paths</th>
+                        <th scope="col">Descriptions</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th>GET</th>
+                        <td>/products</td>
+                        <td>This router shows all the products in the database</td>
+                    </tr>
+                    <tr>
+                        <th>GET</th>
+                        <td>/product/:id</td>
+                        <td>This router shows a single product when a user requests the product by ID</td>
+                    </tr>
+                    <tr>
+                        <th>POST</th>
+                        <td>/product</td>
+                        <td>This router allows us to add a new product into the database</td>
+                    </tr>
+                    <tr>
+                        <th>PACTH</th>
+                        <td>/product/:id</td>
+                        <td>This router is used to update a products and its details on the database</td>
+                    </tr>
+                    <tr>
+                        <th>DELETE</th>
+                        <td>/product/:id</td>
+                        <td>This router is used to delete a products from the database</td>
+                    </tr>
+                    <tr>
+                        <th>GET</th>
+                        <td>/product/name</td>
+                        <td>This router allows us to sort the products by Name</td>
+                    </tr>
+                    <tr>
+                        <th>GET</th>
+                        <td>/products/price</td>
+                        <td>This router is used to sort products by Price</td>
+                    </tr>
+                    <tr>
+                        <th>GET</th>
+                        <td>/products/rolex</td>
+                        <td>This router allows us to filter the products into Rolex products only</td>
+                    </tr>
+                    <tr>
+                        <th>GET</th>
+                        <td>/products/ap</td>
+                        <td>This router allows us to filter the products into Audemars Piguet products only</td>
+                    </tr>
+                    <tr>
+                        <th>GET</th>
+                        <td>/products/pp</td>
+                        <td>This router allows us to filter the products into Patek Philippe products only</td>
+                    </tr>
+                    <tr>
+                        <th>GET</th>
+                        <td>/products/hublot</td>
+                        <td>This router allows us to filter the products into Hublot products only</td>
+                    </tr>
+                    <tr>
+                        <th>GET</th>
+                        <td>/products/th</td>
+                        <td>This router allows us to filter the products into TAG Heuer products only</td>
+                    </tr>
+                    <tr>
+                        <th>GET</th>
+                        <td>/search/:id</td>
+                        <td>This router allows us to search for a product, category and price of a products</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
