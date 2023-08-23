@@ -1,37 +1,57 @@
 import { createStore } from 'vuex'
+import axios from "axios";
 
-const dataUrl = "empty_for_codi_to_put_stuff_in";
+const dataUrl = "https://node-js-eomp.onrender.com/";
 
 
 export default createStore({
   state: {
-    // products
-    watches: null
+    // watches
+    watches: null,
+    // users
+    users: null,
+    // msg
+    msg: null
   },
 
   getters: {
   },
 
   mutations: {
-    // products
+    // watches
     setWatches(state, watches) {
       state.watches = watches
+    },
+    // watches
+    setUsers(state, users) {
+      state.users = users
+    },
+    // setMsg
+    setMsg(state, msg) {
+      state.msg = msg
     }
   },
 
   actions: {
-  // products
-  async fetchWatches(context) { 
+  // watches
+  async fetchWatches(context) {
     try {
-      let res = await fetch(dataUrl)
-      let {watches} = await res.json()
-      context.commit('setWatches', watches)
+      const { data } = await axios.get(`${dataUrl}products`);
+      context.commit("setWatches", data.results);
     } catch (e) {
-      console.log(e.message);
+      context.commit("setMsg", "An error has occurred")
+    }
+  },
+  // users
+  async fetchUsers(context) {
+    try {
+      const { data } = await axios.get(`${dataUrl}users`);
+      context.commit("setUsers", data.results);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred")
     }
   }
   },
-
   modules: {
   }
 })

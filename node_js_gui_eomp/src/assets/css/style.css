@@ -299,20 +299,6 @@ nav a.router-link-exact-active {
   margin: 0.5rem;
 }
 
-#all_buttons_display {
-  display: flex;
-  padding: 2rem;
-  justify-content: space-evenly;
-}
-
-#search_button_style {
-  background-color: transparent;
-}
-
-#search_button_style:hover {
-  color: black;
-  background-color: #ffc851;
-}
 
 
 /* contact us */
@@ -373,3 +359,91 @@ nav a.router-link-exact-active {
 #get_in_touch_form_text {
   padding: 1rem;
 }
+
+
+
+
+/* admin page */
+
+#all_buttons_display {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-evenly;
+}
+
+#search_button_style {
+  background-color: transparent;
+}
+
+#search_button_style:hover {
+  color: black;
+  background-color: #ffc851;
+}
+
+#form_for_dropdown {
+  width: 40rem;
+}
+
+#edit_button_dropdown {
+  border: 0.1px solid #2c3e50;
+}
+
+#edit_button_dropdown:hover {
+  background-color: #ffc851;
+}
+
+#button_for_function_admin {
+  border: 0.1px solid #2c3e50;
+}
+
+#button_for_function_admin:hover {
+  background-color: #ffc851;
+}
+
+#watches_table {
+  display: flex;
+  justify-content: center;
+}
+
+#users_table {
+  display: flex;
+  justify-content: center;
+}
+
+#headings_in_admin_page {
+  color: #ffc851;
+}
+
+#button_for_add_1, #button_for_add_2 {
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 5rem;
+  background-color: #ffc851;
+}
+
+#button_for_add_1:hover, #button_for_add_2:hover {
+  color: #ffc851;
+  background-color: black;
+}
+
+#button_for_add_1 {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+#button_for_add_2 {
+  position: fixed;
+  bottom: 6.5rem;
+  right: 2rem;
+}
+
+#add_button_dropdown {
+  border: 0.1px solid #2c3e50;
+}
+
+#add_button_dropdown:hover {
+  background-color: #ffc851;
+}
+
+
