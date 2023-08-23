@@ -82,5 +82,8 @@ export default {
 </script>
 
 <style scoped>
-
+.dropdown-item:hover{
+  background-color: #ffc851;
+  color: black;
+}
 </style>
