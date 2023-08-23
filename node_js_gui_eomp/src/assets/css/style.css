@@ -284,18 +284,34 @@ nav a.router-link-exact-active {
 }
 
 #product_price {
-  color: red;
+  color: #ffc851;
 }
 
 #watches_card_styling {
   border: none;
-  border-bottom: 1px solid;
+  height: 23rem;
+  width: 20rem;
+  border-radius: 0rem;
+}
+
+#product_line {
+  border-bottom: 0.5px solid black;
+  padding: 0.3rem;
+  margin: 0rem 3rem 0rem;
+}
+
+#product_category {
+  color: #2c3e5072;
+}
+
+#watches_cards_images {
+  border-radius: 0rem;
 }
 
 #products_displaying {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 0.5rem;
 }
 
@@ -445,5 +461,3 @@ nav a.router-link-exact-active {
 #add_button_dropdown:hover {
   background-color: #ffc851;
 }
-
-

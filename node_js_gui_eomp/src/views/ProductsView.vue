@@ -11,19 +11,26 @@
         </div>
 
 
+        <!-- border line footer -->
+      <div id="line_space">
+        <div class="visually-hidden">Empty</div>
+    </div>
+
 
         <!-- displaying products -->
         <div id="products_page">
             <h1 id="heading_displayed_products">Get a watch that suits you...</h1>
+            
           <div id="products_displaying" v-if="watches">
               <div v-for="watches in watches" :key="watches.watchID" class="card text-bg-transparent" id="watches_card_styling">
                   <img id="watches_cards_images" :src="watches.watchUrl" class="card-img" :alt="watches.watchName">
-                  <div class="card-img-overlay" id="product_text_display">
+                  <div class="card-img" id="product_text_display">
+                      <h4 id="product_line"></h4>   
                     <h2 class="card-title"><b>{{ watches.watchName }}</b></h2>
                     <h5 id="product_category">{{ watches.Category }}</h5>
                     <h4 id="product_price">R{{ watches.amount }}</h4>   
-                  </div>
                 </div>
+            </div>
           </div>
 
           <!-- spinner -->
