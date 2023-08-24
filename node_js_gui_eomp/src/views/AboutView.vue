@@ -70,6 +70,7 @@
       <div id="about_sub-title_headings">
         <h1>StellarWrist Latest News</h1>
       </div>
+      
       <!-- border line footer -->
       <div id="line_space_2">
         <div class="visually-hidden">Empty</div>
