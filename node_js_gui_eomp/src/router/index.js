@@ -28,10 +28,11 @@ const routes = [
     component: () => import('../views/AdminView.vue')
   },
   {
-    path: '/productDisplay',
-    name: 'productDisplay',
-    component: () => import('../views/ProductDisplayView.vue')
-  }
+    path: "/watch/:watchID",
+    name: "singlewatch",
+    props: true,
+    component: () => import("../views/ProductDisplayView.vue"),
+  },
 ]
 
 const router = createRouter({

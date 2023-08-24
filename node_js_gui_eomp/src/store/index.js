@@ -13,7 +13,11 @@ export default createStore({
     // msg
     msg: null,
     // spinner
-    spinner: null
+    spinner: null,
+    // view more
+    watch: null,
+    // cookies
+    token: null,
   },
 
   getters: {
@@ -35,7 +39,15 @@ export default createStore({
     // spinner
     setSpinner(state, value) {
       state.spinner = value;
-    }
+    },
+    // view more
+    setWatch(state, watch) {
+      state.watch = watch;
+    },
+    // cookies
+    setToken(state, token) {
+      state.token = token;
+    },
   },
 
   actions: {
@@ -55,6 +67,15 @@ export default createStore({
       context.commit("setUsers", data.results);
     } catch (e) {
       context.commit("setMsg", "An error has occurred")
+    }
+  },
+  // view more
+  async fetchWatch(context, watchID) {
+    try {
+      const { data } = await axios.get(`${dataUrl}product/${watchID}`);
+      context.commit("setWatch", data.result);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
     }
   }
   },
