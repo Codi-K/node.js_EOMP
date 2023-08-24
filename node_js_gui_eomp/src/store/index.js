@@ -24,9 +24,13 @@ export default createStore({
   },
 
   mutations: {
-    // displaying one product
+    // add watch
     addWatch(state, newWatch) {
       state.watches.push(newWatch);
+    },
+    // add watch
+    addUser(state, newUser) {
+      state.users.push(newUser);
     },
     // watches
     setWatches(state, watches) {
@@ -55,12 +59,23 @@ export default createStore({
   },
 
   actions: {
-  // display one product
+  // add watch
   async addWatch(context, watchdata) {
     try {
       location.reload()
       const { data } = await axios.post(`${dataUrl}product`, watchdata);
       context.commit("addWatch", data.results);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+      location.reload()
+    }
+  },
+  // add user
+  async addUser(context, userdata) {
+    try {
+      location.reload()
+      const { data } = await axios.post(`${dataUrl}user`, userdata);
+      context.commit("addUser", data.results);
     } catch (e) {
       context.commit("setMsg", "An error has occurred");
       location.reload()
