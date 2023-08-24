@@ -23,7 +23,7 @@
             
           <div id="products_displaying" v-if="watches">
               <div v-for="watches in watches" :key="watches.watchID" class="card text-bg-transparent" id="watches_card_styling">
-                  <img id="watches_cards_images" :src="watches.watchUrl" class="card-img" :alt="watches.watchName">
+                  <img id="watches_cards_images_1" :src="watches.watchUrl" class="card-img" :alt="watches.watchName">
                   <div class="card-img" id="product_text_display">
                       <h4 id="product_line"></h4>   
                     <h2 class="card-title"><b>{{ watches.watchName }}</b></h2>

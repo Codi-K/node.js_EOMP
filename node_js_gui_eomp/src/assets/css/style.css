@@ -314,6 +314,11 @@ nav a.router-link-exact-active {
   height: 6rem;
 }
 
+#watches_cards_images_1 {
+  border-radius: 0rem;
+  height: 13rem;
+}
+
 #products_displaying {
   display: flex;
   flex-direction: row;
