@@ -30,7 +30,7 @@
                     <h5 id="product_category">{{ watches.Category }}</h5>
                     <h4 id="product_price">R{{ watches.amount }}</h4>
                     
-                    <a href="/productDisplay" id="view_more_button">View More>></a>
+                    <router-link :to="{name:'singlewatch', params:{watchID: watches.watchID}}" id="view_more_button">View More>></router-link>
 
                 </div>
             </div>
