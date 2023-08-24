@@ -25,35 +25,5 @@ export default {
     }
 </script>
 <style  scoped>
-#view_once_image {
-    height: 20rem;
-    margin: 1rem;
-    border-right: 1px solid black;
-    padding-right: 2rem;
-}
 
-#view_one_position {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-}
-
-#text_view_once {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-#heading_for_view_once {
-    color: black;
-}
-
-#sub-heading_for_view_once {
-    color: rgba(0, 0, 0, 0.458);
-}
-
-#price_for_view_once {
-    color: #ffb413;
-}
 </style> 

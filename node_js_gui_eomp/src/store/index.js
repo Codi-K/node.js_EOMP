@@ -24,6 +24,10 @@ export default createStore({
   },
 
   mutations: {
+    // displaying one product
+    addWatch(state, newWatch) {
+      state.watches.push(newWatch);
+    },
     // watches
     setWatches(state, watches) {
       state.watches = watches
@@ -51,6 +55,17 @@ export default createStore({
   },
 
   actions: {
+  // display one product
+  async addWatch(context, watchdata) {
+    try {
+      location.reload()
+      const { data } = await axios.post(`${dataUrl}product`, watchdata);
+      context.commit("addWatch", data.results);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+      location.reload()
+    }
+  },
   // watches
   async fetchWatches(context) {
     try {
