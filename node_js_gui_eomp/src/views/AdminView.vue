@@ -54,7 +54,7 @@
 
 
         <!-- table for watches-->
-        <div id="watches_table">
+        <div id="watches_table" v-if="watches">
           <table class="container-fluid-2">
             <thead id="headings_for_watches_table">
               <th class="list">Watch ID</th>
@@ -125,14 +125,19 @@
                         <td>
                           <button type="button" class="list btn" @click="deleteButton(event)" id="button_for_function_admin">Delete</button>
                         </td>
-                     
+                        
                       </tr>
-                </tbody>
+                    </tbody>
+                    
+                    
 
-
-            </table>
-        </div>
-
+                  </table>
+                </div>
+                
+                <!-- spinner -->
+          <div v-else class="row justify-content-center gap-3">
+            <SpinnerComp/>
+          </div>
 
 
 
@@ -149,7 +154,7 @@
       
       
       <!-- table for users-->
-      <div id="users_table">
+      <div id="users_table" v-if="users">
         <table class="container-fluid-2">
           <thead id="headings_for_users_table">
             <th class="list">User ID</th>
@@ -236,9 +241,14 @@
             </tbody>
 
             
+            
           </table>
-    </div>
-
+        </div>
+        
+        <!-- spinner -->
+        <div v-else class="row justify-content-center gap-3">
+         <SpinnerComp/>
+       </div>
 
 
     <!-- add buttons -->
@@ -345,7 +355,12 @@
 </template>
 
 <script>
+import SpinnerComp from '@/components/SpinnerComp.vue';
+
 export default {
+  components: {
+        SpinnerComp
+    },
     computed: {
       watches() {
           return this.$store.state.watches
