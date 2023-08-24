@@ -28,7 +28,10 @@
                       <h4 id="product_line"></h4>   
                     <h2 class="card-title"><b>{{ watches.watchName }}</b></h2>
                     <h5 id="product_category">{{ watches.Category }}</h5>
-                    <h4 id="product_price">R{{ watches.amount }}</h4>   
+                    <h4 id="product_price">R{{ watches.amount }}</h4>
+                    
+                    <a href="/productDisplay" id="view_more_button">View More>></a>
+
                 </div>
             </div>
           </div>

@@ -294,7 +294,7 @@ nav a.router-link-exact-active {
 
 #watches_card_styling {
   border: none;
-  height: 23rem;
+  height: 26rem;
   width: 20rem;
   border-radius: 0rem;
 }
@@ -309,10 +309,6 @@ nav a.router-link-exact-active {
   color: #2c3e5072;
 }
 
-#watches_cards_images {
-  border-radius: 0rem;
-  height: 6rem;
-}
 
 #watches_cards_images_1 {
   border-radius: 0rem;
@@ -324,6 +320,16 @@ nav a.router-link-exact-active {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0.5rem;
+}
+
+#view_more_button {
+  border: none;
+  text-decoration: none;
+  color: black;
+}
+
+#view_more_button:hover {
+  color: #ffc851;
 }
 
 
@@ -391,6 +397,11 @@ nav a.router-link-exact-active {
 
 
 /* admin page */
+
+#watches_cards_images {
+  border-radius: 0rem;
+  height: 6rem;
+}
 
 #all_buttons_display {
   display: flex;
