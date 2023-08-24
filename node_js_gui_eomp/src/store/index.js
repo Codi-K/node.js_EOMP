@@ -24,6 +24,14 @@ export default createStore({
   },
 
   mutations: {
+    // delete button watches
+    deleteWatch(state, watchID) {
+      state.watches= state.watches.filter(watch => watch.watchID !== watchID);
+    },
+    // delete button users
+    deleteuser(state, userID) {
+      state.users= state.users.filter(user => user.userID !== userID);
+    },
     // add watch
     addWatch(state, newWatch) {
       state.watches.push(newWatch);
@@ -59,6 +67,26 @@ export default createStore({
   },
 
   actions: {
+    // delete button watches
+    async deleteWatch(context, watchID) {
+      try {
+        const { data } = await axios.delete(`${dataUrl}product/${watchID}`);
+        context.commit("deleteWatch", data.result);
+        location.reload()
+      } catch (e) {
+        context.commit("setMsg", "An error has occurred");
+      }
+    },
+    // delete button users
+    async deleteUser(context, userID) {
+      try {
+        const { data } = await axios.delete(`${dataUrl}user/${userID}`);
+        context.commit("deleteUser", data.result);
+        location.reload()
+      } catch (e) {
+        context.commit("setMsg", "An error has occurred");
+      }
+    },
   // add watch
   async addWatch(context, watchdata) {
     try {

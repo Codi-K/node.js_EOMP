@@ -79,51 +79,12 @@
 
 
                     <td id="product_edit_button" class="list">                      
-                      <!-- dropdown for edit -->
-                      <div class="dropdown btn-group dropstart">
-
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" id="button_for_function_admin">Edit</button>
-
-                          <!-- dropdown -->
-
-                          <form class="dropdown-menu p-4" id="form_for_dropdown">
-
-                            <div class="mb-3">
-                              <label for="exampleDropdown" class="form-label">Watch Name:</label>
-                              <input type="watch_name" class="form-control" id="exampleDropdown" placeholder="Watch Name..." required oninvalid="this.setCustomValidity('Please Enter A Watch Name😢')" oninput="this.setCustomValidity('')">
-                            </div>
-                            
-                            <div class="mb-3">
-                              <label for="exampleDropdown" class="form-label">Quantity:</label>
-                              <input type="quantity" class="form-control" id="exampleDropdown" placeholder="Quantity..." required oninvalid="this.setCustomValidity('Please Enter A Quantity😢')" oninput="this.setCustomValidity('')">
-                            </div>
-                            
-                            <div class="mb-3">
-                              <label for="exampleDropdown" class="form-label">Price:</label>
-                              <input type="price" class="form-control" id="exampleDropdown" placeholder="Price..." required oninvalid="this.setCustomValidity('Please Enter A Price😢')" oninput="this.setCustomValidity('')">
-                            </div>
-                            
-                            <div class="mb-3">
-                              <label for="exampleDropdown" class="form-label">Category:</label>
-                              <input type="category" class="form-control" id="exampleDropdown" placeholder="Category..." required oninvalid="this.setCustomValidity('Please Enter A Category😢')" oninput="this.setCustomValidity('')">
-                            </div>
-                            
-                            <div class="mb-3">
-                              <label for="exampleDropdown" class="form-label">Image:</label>
-                              <input type="image_url" class="form-control" id="exampleDropdown" placeholder="Image..." required oninvalid="this.setCustomValidity('Please Insert An Image😢')" oninput="this.setCustomValidity('')">
-                            </div>
-
-                          
-
-                            <button type="submit" class="btn" id="edit_button_dropdown">Edit</button>
-                          </form>
-                        </div>
+                      <UpdateProductComp/>
                         </td>
 
 
                         <td>
-                          <button type="button" class="list btn" @click="deleteButton(event)" id="button_for_function_admin">Delete</button>
+                          <button type="button" class="list btn" @click="deleteWatch(watches.watchID)" id="button_for_function_admin">Delete</button>
                         </td>
                         
                       </tr>
@@ -165,6 +126,8 @@
             <th class="list">User Role</th>
             <th class="list">Email Address</th>
             <th class="list">User Profile</th>
+            <th class="list">Edit</th>
+            <th class="list">Delete</th>
           </thead>
           
           
@@ -181,60 +144,11 @@
 
 
               <td id="user_edit_button" class="list">                      
-                <!-- dropdown for edit -->
-                <div class="dropdown btn-group dropstart">
-                  
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" id="button_for_function_admin">Edit</button>
-                    
-                    <!-- dropdown -->
-                    
-                    <form class="dropdown-menu p-4" id="form_for_dropdown">
-                      
-                      <div class="mb-3">
-                        <label for="exampleDropdown" class="form-label">First Name:</label>
-                        <input type="first_name" class="form-control" id="exampleDropdown" placeholder="First Name..." required oninvalid="this.setCustomValidity('Please Enter A First Name😢')" oninput="this.setCustomValidity('')">
-                      </div>
-                      
-                      <div class="mb-3">
-                        <label for="exampleDropdown" class="form-label">Last Name:</label>
-                        <input type="last_name" class="form-control" id="exampleDropdown" placeholder="Last Name..." required oninvalid="this.setCustomValidity('Please Enter A Last Name😢')" oninput="this.setCustomValidity('')">
-                      </div>
-                      
-                      <div class="mb-3">
-                        <label for="exampleDropdown" class="form-label">User Age:</label>
-                        <input type="user_age" class="form-control" id="exampleDropdown" placeholder="User Age..." required oninvalid="this.setCustomValidity('Please Enter A User Age😢')" oninput="this.setCustomValidity('')">
-                      </div>
-                      
-                      <div class="mb-3">
-                        <label for="exampleDropdown" class="form-label">Gender:</label>
-                        <input type="gender" class="form-control" id="exampleDropdown" placeholder="Gender..." required oninvalid="this.setCustomValidity('Please Enter A Gender😢')" oninput="this.setCustomValidity('')">
-                      </div>
-                      
-                      <div class="mb-3">
-                        <label for="exampleDropdown" class="form-label">User Role:</label>
-                        <input type="user_role" class="form-control" id="exampleDropdown" placeholder="User Role..." required oninvalid="this.setCustomValidity('Please Insert An User Role😢')" oninput="this.setCustomValidity('')">
-                      </div>
-                      
-                      <div class="mb-3">
-                        <label for="exampleDropdown" class="form-label">Email Address:</label>
-                        <input type="email_address" class="form-control" id="exampleDropdown" placeholder="Email Address..." required oninvalid="this.setCustomValidity('Please Insert An Email Address😢')" oninput="this.setCustomValidity('')">
-                      </div>
-                      
-                      <div class="mb-3">
-                        <label for="exampleDropdown" class="form-label">User Profile:</label>
-                        <input type="user_profile" class="form-control" id="exampleDropdown" placeholder="User Profile..." required oninvalid="this.setCustomValidity('Please Insert An User Profile😢')" oninput="this.setCustomValidity('')">
-                      </div>
-                      
-                      
-                      
-                      <button type="submit" class="btn" id="edit_button_dropdown">Edit</button>
-                    </form>
-                  </div>
+                <UpdateUserComp/>
                   </td>
                   
                   <td>
-                    <button type="button" class="list btn" id="button_for_function_admin">Delete</button>
+                    <button type="button" class="list btn" @click="deleteUser(users.userID)" id="button_for_function_admin">Delete</button>
                   </td>
                
                 </tr>
@@ -264,13 +178,17 @@
 import SpinnerComp from '@/components/SpinnerComp.vue';
 import AddProductComp from '@/components/AddProductComp.vue';
 import AddUserComp from '@/components/AddUserComp.vue';
+import UpdateProductComp from '../components/UpdateProductComp.vue';
+import UpdateUserComp from '@/components/UpdateUserComp.vue';
 
 export default {
   components: {
-        SpinnerComp,
-        AddProductComp,
-        AddUserComp
-    },
+    SpinnerComp,
+    AddProductComp,
+    AddUserComp,
+    UpdateProductComp,
+    UpdateUserComp
+},
     computed: {
       watches() {
           return this.$store.state.watches
@@ -279,6 +197,14 @@ export default {
           return this.$store.state.users
       }
   },
+  methods: {
+    deleteWatch(watchID) {
+          this.$store.dispatch("deleteWatch", watchID)
+        },
+    deleteUser(userID) {
+          this.$store.dispatch("deleteUser", userID)
+        }
+      },
       mounted() {
           this.$store.dispatch('fetchWatches')
           this.$store.dispatch('fetchUsers')
