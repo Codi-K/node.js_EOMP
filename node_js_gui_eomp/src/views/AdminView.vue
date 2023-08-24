@@ -173,7 +173,7 @@
               <td class="list">{{ users.userID }}</td>
               <td class="list">{{ users.firstName }}</td>
               <td class="list">{{ users.lastName }}</td>
-              <td class="list">R {{ users.userAge }}</td>
+              <td class="list">{{ users.userAge }}</td>
               <td class="list">{{ users.gender }}</td>
               <td class="list">{{ users.userRole }}</td>
               <td class="list">{{ users.emailAdd }}</td>

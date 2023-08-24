@@ -398,6 +398,10 @@ nav a.router-link-exact-active {
 
 /* admin page */
 
+#users_cards_images {
+  height: 8rem;
+}
+
 #watches_cards_images {
   border-radius: 0rem;
   height: 6rem;
