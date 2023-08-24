@@ -3,7 +3,7 @@
 
         <!-- welcome products -->
         <div id="welcome_products">
-            <img id="welcome_product_image" src="https://i.postimg.cc/KvQ408Z9/female-bestseller-970x.jpg" alt="product_for_show">
+            <img id="welcome_product_image" src="https://magazine.chrono24.com/cdn-cgi/image/f=auto,metadata=none,fit=cover,q=65,w=1190,h=595,dpr=2.0/2022/07/Watch-market-updates-Magazin-2-1.jpg" alt="product_for_show">
             <div id="product_welcome_heading_and_text">
                 <h3 id="products_sub-heading">Our Watches...</h3>
                 <p id="products_welcome_text">Our watches offer comfort and pleasure to all our customers as well as style. All age groups can sport a fashionable accessory such as our watches in their daily lives. Which watch is right for you? Well our dedicated team at any branch will help you pick out a watch just right for any occasion. Our mission, to satisfy all our customers, because at the end of the day you happiness is what makes us happy</p>

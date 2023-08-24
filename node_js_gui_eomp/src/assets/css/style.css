@@ -262,11 +262,16 @@ nav a.router-link-exact-active {
 }
 
 #welcome_product_image {
-  height: 20rem;
+  height: 30rem;
+}
+
+#product_welcome_heading_and_text {
+  background-color: #ffc851;
+  padding: 2rem;
 }
 
 #products_sub-heading {
-  color: #ffc851;
+  color: black;
   text-align: left;
   padding-left: 2rem;
 }
@@ -306,6 +311,7 @@ nav a.router-link-exact-active {
 
 #watches_cards_images {
   border-radius: 0rem;
+  height: 6rem;
 }
 
 #products_displaying {
