@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="everything_animated">
         <div id="contact_page">
 
             <div id="get_in_touch">
@@ -35,7 +35,7 @@
                       <input type="comment" class="form-control" id="exampleInputComment" placeholder="Comments..." name="comments_or_problems" required oninvalid="this.setCustomValidity('Please Insert Your Comment Or Problem😢')" oninput="this.setCustomValidity('')">
                     </div>
                 
-                    <button type="submit" class="btn" id="form_submit_button">Submit</button>
+                    <button type="submit" class="btn" id="form_submit_button"><span id="flicker_2">Submit</span></button>
                   </form>
 
             </div>

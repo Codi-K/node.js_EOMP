@@ -10,15 +10,15 @@
     <div id="promo_and_sales">
       <div id="deal_1">
         <div id="deal_1_text">
-          <h2>Get a discount of <span style="color: red;">20%</span> on our watches</h2>
+          <h2>Get a discount of <span style="color: red;" id="flicker">20%</span> on our watches</h2>
           <h2>If you have bought here before...</h2>
-          <h2>Become a <span style="color: #ffc851;">GOLD Customer Today.</span></h2>
+          <h2>Become a <span style="color: #ffc851;" id="flicker_1">GOLD Customer Today.</span></h2>
         </div>
       </div>
       <div id="deal_2">
         <div id="deal_2_text">
-          <h2>Our all <span style="color: #ffc851">NEW</span> September Sneak Peek Deal</h2>
-          <a href="#sneak_peek"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+          <h2>Our all <span style="color: #ffc851" id="flicker_1">NEW</span> September Sneak Peek Deal</h2>
+          <a href="#sneak_peek"><svg id="animation_downarrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
             <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
           </svg></a>
