@@ -122,6 +122,71 @@ export default createStore({
       context.commit("setMsg", "An error has occurred")
     }
   },
+  // sort and filter
+  async fetchName(context) {
+    try {
+      const { data } = await axios.get(`${dataUrl}products/name`);
+      context.commit("setWatches", data.results);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+    }
+  },
+  async fetchPrice(context) {
+    try {
+      const { data } = await axios.get(`${dataUrl}products/price`);
+      context.commit("setWatches", data.results);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+    }
+  },
+  async fetchRolex(context) {
+    try {
+      const { data } = await axios.get(`${dataUrl}products/rolex`);
+      context.commit("setWatches", data.results);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+    }
+  },
+  async AudemarsPiguet(context) {
+    try {
+      const { data } = await axios.get(`${dataUrl}products/ap`);
+      context.commit("setWatches", data.results);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+    }
+  },
+  async PatekPhilippe(context) {
+    try {
+      const { data } = await axios.get(`${dataUrl}products/pp`);
+      context.commit("setWatches", data.results);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+    }
+  },
+  async Hublot(context) {
+    try {
+      const { data } = await axios.get(`${dataUrl}products/hublot`);
+      context.commit("setWatches", data.results);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+    }
+  },
+  async TagHeuer(context) {
+    try {
+      const { data } = await axios.get(`${dataUrl}products/th`);
+      context.commit("setWatches", data.results);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+    }
+  },
+  async SearchWatch(context, watchID) {
+    try {
+      const { data } = await axios.get(`${dataUrl}products/${watchID}`);
+      context.commit("setWatch", data.result);
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+    }
+  },
   // view more
   async fetchWatch(context, watchID) {
     try {

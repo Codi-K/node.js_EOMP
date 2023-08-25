@@ -335,7 +335,7 @@ nav a.router-link-exact-active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0.5rem;
+  justify-content: center;
 }
 
 #view_more_button {
