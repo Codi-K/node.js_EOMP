@@ -15,9 +15,6 @@
 }
 
 /* navbar */
-#full_navbar_styling {
-    height: 6rem;
-}
 
 #navbar_logo_image_styling {
     height: 5rem;
@@ -68,6 +65,8 @@ nav a.router-link-exact-active {
 }
 
 #landing_page_text {
+  border-bottom: 1px solid #f6da9f;
+  border-top: 1px solid #f6da9f;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -355,7 +354,7 @@ nav a.router-link-exact-active {
 
 #contact_page {
   display: flex;
-  height: 70vh;
+  height: 68vh;
   margin: 1rem;
 }
 
@@ -548,7 +547,14 @@ nav a.router-link-exact-active {
 
 @media (width< 1200px) {
 
-  /* footer */
+  #everything_animated {
+    animation-name: none !important;
+  }
+ 
+  #landing_page_text {
+    animation-name: none !important;
+  }
+
   #line_space {
     margin: 1rem 2rem 2rem;
   }
@@ -562,10 +568,15 @@ nav a.router-link-exact-active {
   }
 
   
-  /* home page  */
   #image_for_landing_page {
     display: block;
+    padding: 2rem;
   }
+  
+  #landing_page_image {
+    padding: 0.5rem;
+  }
+
   #promo_and_sales {
     display: flex;
     flex-direction: column;
@@ -672,4 +683,72 @@ nav a.router-link-exact-active {
   #contact_page {
     margin-bottom: 30rem;
   }
+  
+}
+
+
+
+/* animations */
+
+#flicker {
+  animation-name: flicker;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flicker {
+  50%{color: black;}
+}
+
+#flicker_1 {
+  animation-name: flicker_1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flicker_1 {
+  50%{color: black;}
+}
+
+#flicker_2 {
+  animation-name: flicker_2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flicker_2 {
+  50%{color:white;}
+}
+
+#landing_page_text {
+  animation-name: line;
+  animation-duration: 4s;
+}
+
+@keyframes line {
+  0%{border-bottom: 1px solid; border-top: 1px solid; padding: 7rem;}
+  100%{border-bottom: 1px solid; border-top: 1px solid; padding: 2rem;}
+}
+
+#about_us_company_image {
+  animation-name: move_in;
+  animation-duration: 2s;
+  animation-iteration-count: ease-in;
+
+}
+
+@keyframes move_in {
+  50%{padding: 5rem;}
+}
+
+
+#everything_animated {
+  animation-name: faded;
+  animation-duration: 2s;
+  animation-iteration-count: ease-in;
+
+}
+
+@keyframes faded {
+  50%{padding-left: 15rem;}
 }

@@ -86,7 +86,7 @@
           </div>
           <div class="col-md-8">
             <div class="card-body" id="new_watch_news">
-              <h4 class="card-title" id="card_title_heading">Our All New CIVO Watch</h4>
+              <h4 class="card-title" id="card_title_heading"><h4 id="flicker_1">Our All New CIVO Watch</h4></h4>
               <p class="card-text">This Men's Watch is a light weight and seamlessly masculine watch. The subtle gold accents on the pure black face add an extraordinary highlight to this wrist piece.</p>
               <p class="card-text"><small class="text-body-secondary">August 22, 2023</small></p>
             </div>
@@ -102,7 +102,7 @@
           </div>
           <div class="col-md-8">
             <div class="card-body" id="new_watch_news">
-              <h4 class="card-title" id="card_title_heading">In Collaboration With Rolex</h4>
+              <h4 class="card-title" id="card_title_heading"><h4 id="flicker_1">In Collaboration With Rolex</h4></h4>
               <p class="card-text">We are proud to announce our collaboration with Rolex in developing a new and innovative watch, meant for all genders and wearable anywhere in the world.</p>
               <p class="card-text"><small class="text-body-secondary">August 8, 2023</small></p>
             </div>
@@ -149,7 +149,7 @@
 
     <div id="helpline_positioning">
       <div id="helpline">
-        <h2 id="helpline_heading">STELLARWRIST HELPLINE</h2>
+        <h2 id="helpline_heading"><h2 id="flicker_1">STELLARWRIST HELPLINE</h2></h2>
         <h6>+27 65 954 3215</h6>
         <h6>stellarwristconnect@gmail.com</h6>
       </div>
