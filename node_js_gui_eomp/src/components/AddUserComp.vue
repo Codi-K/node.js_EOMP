@@ -79,7 +79,22 @@ data() {
 },
 methods: {
   addUser(){
-    this.$store.dispatch('addUser', this.newUser)
+    this.$store.dispatch('addUser', this.newUser);
+
+
+    // clears all the inputs
+    this.newUser = {
+      firstName: '',
+      lastName: '',
+      userAge: '',
+      gender: '',
+      userRole: '',
+      emailAdd:'',
+      userPass:'',
+      userProfile:''
+    };
+
+
   }
 }
   }

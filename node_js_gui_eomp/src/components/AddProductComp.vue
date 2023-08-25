@@ -49,7 +49,16 @@ data() {
 },
 methods: {
   addWatch(){
-    this.$store.dispatch('addWatch', this.newWatch)
+    this.$store.dispatch('addWatch', this.newWatch);
+
+    // clears all the inputs
+    this.newWatch = {
+      watchName: '',
+      quantity: '',
+      amount: '',
+      Category: '',
+      watchUrl: ''
+    };
   }
 }
   }
