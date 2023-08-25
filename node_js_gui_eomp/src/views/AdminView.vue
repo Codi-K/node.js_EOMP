@@ -48,6 +48,7 @@
         <div id="watches_table" v-if="watches" class="container-fluid">
           <table class="container-fluid-2">
             <thead id="headings_for_watches_table">
+              <th class="list" id="watch_url_media">Watch ID</th>
               <th class="list">Watch Name</th>
               <th class="list" id="watch_url_media">Quantity</th>
               <th class="list">Price</th>
@@ -60,6 +61,7 @@
 
                 <tbody id="product_list">
                   <tr v-for="watch in watches" :key="watch.id" class="list">
+                    <td class="list" id="watch_url_media">{{ watch.watchID }}</td>
                     <td class="list">{{ watch.watchName }}</td>
                     <td class="list" id="watch_url_media">{{ watch.quantity }}</td>
                     <td class="list">R {{ watch.amount }}</td>
@@ -107,6 +109,7 @@
       <div id="users_table" v-if="users">
         <table class="container-fluid-2">
           <thead id="headings_for_users_table">
+            <th class="list" id="watch_url_media">User ID</th>
             <th class="list">First Name</th>
             <th class="list">Last name</th>
             <th class="list" id="watch_url_media">User Age</th>
@@ -121,6 +124,7 @@
           
           <tbody id="product_list">
             <tr v-for="user in users" :key="user.id" class="list">
+              <td class="list" id="watch_url_media">{{ user.userID }}</td>
               <td class="list">{{ user.firstName }}</td>
               <td class="list">{{ user.lastName }}</td>
               <td class="list" id="watch_url_media">{{ user.userAge }}</td>

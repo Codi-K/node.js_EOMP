@@ -195,7 +195,40 @@ export default createStore({
     } catch (e) {
       context.commit("setMsg", "An error has occurred");
     }
-  }
+  },
+  // update watch
+  async updatedWatch(context, editedWatch) {
+    try {
+      const { data } = await axios.patch(
+        `${dataUrl}product/${editedWatch.watchID}`,
+        editedWatch
+      );
+      const { msg } = await data;
+      if (msg) {
+        context.commit("setMsg", msg);
+        // context.dispatch("fetchWatches");
+      }
+      location.reload();
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+    }
+  },
+  // update user
+  async updatedUser(context, editedUser) {
+    try {
+      const { data } = await axios.patch(
+        `${dataUrl}user/${editedUser.userID}`,
+        editedUser
+      );
+      const { msg } = await data;
+      if (msg) {
+        context.commit("setMsg", msg);
+      }
+      location.reload();
+    } catch (e) {
+      context.commit("setMsg", "An error has occurred");
+    }
+  },
   },
   modules: {
   }
