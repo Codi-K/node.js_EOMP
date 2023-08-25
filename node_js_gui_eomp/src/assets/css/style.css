@@ -42,6 +42,17 @@ nav a.router-link-exact-active {
 
 
 /* home page */
+#media_query_image {
+  display: none;
+  height: auto;
+  padding: 1rem;
+}
+
+#div_media_image {
+  display: flex;
+  justify-content: center;
+}
+
 #image_for_landing_page {
   display: flex;
   text-align: center;
@@ -105,7 +116,7 @@ nav a.router-link-exact-active {
   color: #f6da9f;
 }
 #watch_image_carousel {
-  height: 25rem;
+  height: 20rem;
 }
 
 #carouselExample {
@@ -126,6 +137,12 @@ nav a.router-link-exact-active {
   border-top: 2px solid black;
   margin: 2rem 10rem 2rem;
 }
+
+
+
+
+
+
 
 #footer_positioning {
   display: flex;
@@ -523,4 +540,136 @@ nav a.router-link-exact-active {
 
 #price_for_view_once {
   color: #ffb413;
+}
+
+
+/* media queries */
+
+
+@media (width< 1200px) {
+
+  /* footer */
+  #line_space {
+    margin: 1rem 2rem 2rem;
+  }
+  #footer_positioning {
+    display: block;
+  }
+  #links_for_footer {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  
+  /* home page  */
+  #image_for_landing_page {
+    display: block;
+  }
+  #promo_and_sales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #deal_1 {
+    margin: 1rem;
+    width: 85%;
+  }
+  #deal_2 {
+    width: 85%;
+  }
+  #watch_image_carousel {
+    width: 100%;
+    height: auto;
+  }
+  #sneak_peek {
+    width: 100%;
+    height: auto;
+  }
+  #carouosel_watch_div {
+    display: none;
+  }
+  #media_query_image {
+    display: block;
+  }
+
+  /* about */
+  #about_us_paragraph {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+  }
+  #images_of_leadership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #partners {
+    display: none;
+  }
+  #about_us_company_image {
+    display: none;
+  }
+  #helpline_positioning {
+    margin: 1rem;
+  }
+
+
+  /* products */
+  #welcome_products {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  #welcome_product_image {
+    display: none;
+  }
+  #product_welcome_heading_and_text {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  #heading_displayed_products {
+    margin: 0.5rem;
+  }
+  #products_displaying {
+    justify-content: center;
+  }
+  #all_buttons_display {
+    display: flex;
+    flex-direction: column;
+ 
+  }
+  #watches_cards_images {
+    display: none;
+  }
+  #watch_url_media {
+    display: none;
+  }
+  #product_edit_button {
+    display: none;
+  }
+  #user_edit_button {
+    display: none;
+  }
+  #contact_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #get_in_touch {
+    width: 85%;
+    border: 1px solid black;
+  }
+  #form_position {
+    display: flex;
+    flex-direction: column;
+  }
+  #form_contact_input {
+    width: 85%;
+  }
+  #contact_page {
+    margin-bottom: 30rem;
+  }
 }

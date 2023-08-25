@@ -54,15 +54,15 @@
 
 
         <!-- table for watches-->
-        <div id="watches_table" v-if="watches">
+        <div id="watches_table" v-if="watches" class="container-fluid">
           <table class="container-fluid-2">
             <thead id="headings_for_watches_table">
               <th class="list">Watch Name</th>
-              <th class="list">Quantity</th>
+              <th class="list" id="watch_url_media">Quantity</th>
               <th class="list">Price</th>
-              <th class="list">Category</th>
-              <th class="list">Watch Url</th>
-              <th class="list">Edit</th>
+              <th class="list" id="watch_url_media">Category</th>
+              <th class="list" id="watch_url_media">Watch Url</th>
+              <th class="list" id="watch_url_media">Edit</th>
               <th class="list">Delete</th>
             </thead>
 
@@ -70,10 +70,10 @@
                 <tbody id="product_list">
                   <tr v-for="watch in watches" :key="watch.id" class="list">
                     <td class="list">{{ watch.watchName }}</td>
-                    <td class="list">{{ watch.quantity }}</td>
+                    <td class="list" id="watch_url_media">{{ watch.quantity }}</td>
                     <td class="list">R {{ watch.amount }}</td>
-                    <td class="list">{{ watch.Category }}</td>
-                    <td class="list"><img id="watches_cards_images" :src="watch.watchUrl" class="card-img" :alt="watch.watchName"></td>
+                    <td class="list" id="watch_url_media">{{ watch.Category }}</td>
+                    <td class="list" id="watch_url_media"><img id="watches_cards_images" :src="watch.watchUrl" class="card-img" :alt="watch.watchName"></td>
 
 
                     <td id="product_edit_button" class="list">                      
@@ -118,12 +118,12 @@
           <thead id="headings_for_users_table">
             <th class="list">First Name</th>
             <th class="list">Last name</th>
-            <th class="list">User Age</th>
-            <th class="list">Gender</th>
-            <th class="list">User Role</th>
-            <th class="list">Email Address</th>
-            <th class="list">User Profile</th>
-            <th class="list">Edit</th>
+            <th class="list" id="watch_url_media">User Age</th>
+            <th class="list" id="watch_url_media">Gender</th>
+            <th class="list" id="watch_url_media">User Role</th>
+            <th class="list" id="watch_url_media">Email Address</th>
+            <th class="list" id="watch_url_media">User Profile</th>
+            <th class="list" id="watch_url_media">Edit</th>
             <th class="list">Delete</th>
           </thead>
           
@@ -132,11 +132,11 @@
             <tr v-for="user in users" :key="user.id" class="list">
               <td class="list">{{ user.firstName }}</td>
               <td class="list">{{ user.lastName }}</td>
-              <td class="list">{{ user.userAge }}</td>
-              <td class="list">{{ user.gender }}</td>
-              <td class="list">{{ user.userRole }}</td>
-              <td class="list">{{ user.emailAdd }}</td>
-              <td class="list"><img id="users_cards_images" :src="user.userProfile" class="card-img" :alt="user.firstName"></td>
+              <td class="list" id="watch_url_media">{{ user.userAge }}</td>
+              <td class="list" id="watch_url_media">{{ user.gender }}</td>
+              <td class="list" id="watch_url_media">{{ user.userRole }}</td>
+              <td class="list" id="watch_url_media">{{ user.emailAdd }}</td>
+              <td class="list" id="watch_url_media"><img id="users_cards_images" :src="user.userProfile" class="card-img" :alt="user.firstName"></td>
 
 
               <td id="user_edit_button" class="list">                      
