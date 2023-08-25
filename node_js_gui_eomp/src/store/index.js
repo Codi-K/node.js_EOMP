@@ -26,11 +26,11 @@ export default createStore({
   mutations: {
     // delete button watches
     deleteWatch(state, watchID) {
-      state.watches= state.watches.filter(watch => watch.watchID !== watchID);
+      state.watches = state.watches.filter(watch => watch.watchID !== watchID);
     },
     // delete button users
     deleteuser(state, userID) {
-      state.users= state.users.filter(user => user.userID !== userID);
+      state.users = state.users.filter(user => user.userID !== userID);
     },
     // add watch
     addWatch(state, newWatch) {
@@ -70,9 +70,8 @@ export default createStore({
     // delete button watches
     async deleteWatch(context, watchID) {
       try {
-        const { data } = await axios.delete(`${dataUrl}product/${watchID}`);
-        context.commit("deleteWatch", data.result);
-        location.reload()
+        await axios.delete(`${dataUrl}product/${watchID}`);
+        context.commit("deleteWatch", watchID);
       } catch (e) {
         context.commit("setMsg", "An error has occurred");
       }
@@ -80,8 +79,8 @@ export default createStore({
     // delete button users
     async deleteUser(context, userID) {
       try {
-        const { data } = await axios.delete(`${dataUrl}user/${userID}`);
-        context.commit("deleteUser", data.result);
+        await axios.delete(`${dataUrl}user/${userID}`);
+        context.commit("deleteUser", userID);
         location.reload()
       } catch (e) {
         context.commit("setMsg", "An error has occurred");
@@ -90,23 +89,19 @@ export default createStore({
   // add watch
   async addWatch(context, watchdata) {
     try {
-      location.reload()
-      const { data } = await axios.post(`${dataUrl}product`, watchdata);
-      context.commit("addWatch", data.results);
+      await axios.post(`${dataUrl}product`, watchdata);
+      context.commit("addWatch", watchdata);
     } catch (e) {
       context.commit("setMsg", "An error has occurred");
-      location.reload()
     }
   },
   // add user
   async addUser(context, userdata) {
     try {
-      location.reload()
-      const { data } = await axios.post(`${dataUrl}user`, userdata);
-      context.commit("addUser", data.results);
+      await axios.post(`${dataUrl}user`, userdata);
+      context.commit("addUser", userdata);
     } catch (e) {
       context.commit("setMsg", "An error has occurred");
-      location.reload()
     }
   },
   // watches

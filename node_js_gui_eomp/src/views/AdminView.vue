@@ -57,7 +57,6 @@
         <div id="watches_table" v-if="watches">
           <table class="container-fluid-2">
             <thead id="headings_for_watches_table">
-              <th class="list">Watch ID</th>
               <th class="list">Watch Name</th>
               <th class="list">Quantity</th>
               <th class="list">Price</th>
@@ -69,13 +68,12 @@
 
 
                 <tbody id="product_list">
-                  <tr v-for="watches in watches" :key="watches.watchID" class="list">
-                    <td class="list">{{ watches.watchID }}</td>
-                    <td class="list">{{ watches.watchName }}</td>
-                    <td class="list">{{ watches.quantity }}</td>
-                    <td class="list">R {{ watches.amount }}</td>
-                    <td class="list">{{ watches.Category }}</td>
-                    <td class="list"><img id="watches_cards_images" :src="watches.watchUrl" class="card-img" :alt="watches.watchName"></td>
+                  <tr v-for="watch in watches" :key="watch.id" class="list">
+                    <td class="list">{{ watch.watchName }}</td>
+                    <td class="list">{{ watch.quantity }}</td>
+                    <td class="list">R {{ watch.amount }}</td>
+                    <td class="list">{{ watch.Category }}</td>
+                    <td class="list"><img id="watches_cards_images" :src="watch.watchUrl" class="card-img" :alt="watch.watchName"></td>
 
 
                     <td id="product_edit_button" class="list">                      
@@ -84,7 +82,7 @@
 
 
                         <td>
-                          <button type="button" class="list btn" @click="deleteWatch(watches.watchID)" id="button_for_function_admin">Delete</button>
+                          <button type="button" class="list btn" @click="deleteWatch(watch.watchID)" id="button_for_function_admin">Delete</button>
                         </td>
                         
                       </tr>
@@ -118,7 +116,6 @@
       <div id="users_table" v-if="users">
         <table class="container-fluid-2">
           <thead id="headings_for_users_table">
-            <th class="list">User ID</th>
             <th class="list">First Name</th>
             <th class="list">Last name</th>
             <th class="list">User Age</th>
@@ -132,15 +129,14 @@
           
           
           <tbody id="product_list">
-            <tr v-for="users in users" :key="users.userID" class="list">
-              <td class="list">{{ users.userID }}</td>
-              <td class="list">{{ users.firstName }}</td>
-              <td class="list">{{ users.lastName }}</td>
-              <td class="list">{{ users.userAge }}</td>
-              <td class="list">{{ users.gender }}</td>
-              <td class="list">{{ users.userRole }}</td>
-              <td class="list">{{ users.emailAdd }}</td>
-              <td class="list"><img id="users_cards_images" :src="users.userProfile" class="card-img" :alt="users.firstName"></td>
+            <tr v-for="user in users" :key="user.id" class="list">
+              <td class="list">{{ user.firstName }}</td>
+              <td class="list">{{ user.lastName }}</td>
+              <td class="list">{{ user.userAge }}</td>
+              <td class="list">{{ user.gender }}</td>
+              <td class="list">{{ user.userRole }}</td>
+              <td class="list">{{ user.emailAdd }}</td>
+              <td class="list"><img id="users_cards_images" :src="user.userProfile" class="card-img" :alt="user.firstName"></td>
 
 
               <td id="user_edit_button" class="list">                      
@@ -148,7 +144,7 @@
                   </td>
                   
                   <td>
-                    <button type="button" class="list btn" @click="deleteUser(users.userID)" id="button_for_function_admin">Delete</button>
+                    <button type="button" class="list btn" @click="deleteUser(user.userID)" id="button_for_function_admin">Delete</button>
                   </td>
                
                 </tr>
