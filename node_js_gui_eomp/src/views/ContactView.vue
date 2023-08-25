@@ -53,12 +53,13 @@
 <style scoped>
 
 input {
-    width: 20rem;
+    width: auto;
   }
   
   label {
     width: 10rem;
     text-align: left;
   }
+  
   
 </style>
