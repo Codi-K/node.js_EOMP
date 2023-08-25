@@ -12,35 +12,26 @@
 
 
       <!-- watches buttons and search -->
-      
-
-        <div id="all_buttons_display">
-
-            
-            <!-- filter -->
-            <div class="dropdown">
-            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sort</a>
-          
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Name</a></li>
-              <li><a class="dropdown-item" href="#">Price</a></li>
-            </ul>
-        </div>
-
-          <!-- sort -->
-          <div class="dropdown">
-            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Filter</a>
-          
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Rolex</a></li>
-              <li><a class="dropdown-item" href="#">Audemars Piguet</a></li>
-              <li><a class="dropdown-item" href="#">Patek Philippe</a></li>
-              <li><a class="dropdown-item" href="#">Hublot</a></li>
-              <li><a class="dropdown-item" href="#">TAG Heuer</a></li>
-            </ul>
-          </div>
-        
-          
+      <div id="all_buttons_display">
+        <!-- filter -->
+        <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sort</a>
+        <ul class="dropdown-menu">
+          <li><router-link class="dropdown-item" to="/name">Name</router-link></li>
+          <li><router-link class="dropdown-item" to="/price">Price</router-link></li>
+        </ul>
+    </div>
+      <!-- sort -->
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Filter</a>
+        <ul class="dropdown-menu">
+          <li><router-link class="dropdown-item" to="/rolex">Rolex</router-link></li>
+          <li><router-link class="dropdown-item" to="/ap">Audemars Piguet</router-link></li>
+          <li><router-link class="dropdown-item" to="/pp">Patek Philippe</router-link></li>
+          <li><router-link class="dropdown-item" to="/hublot">Hublot</router-link></li>
+          <li><router-link class="dropdown-item" to="/th">TAG Heuer</router-link></li>
+        </ul>
+      </div>
           <!-- search -->
         <form class="d-flex" role="search">
             <input id="search_input_style" class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
