@@ -16,7 +16,7 @@
 
       <div id="about_position">
         <div id="about_us_paragraph">
-          <img id="about_us_company_image" src="https://i.postimg.cc/QC2BZ7zX/STELLAR-removebg-preview.png" alt="new_watch_release">
+          <img id="about_us_company_image" src="../assets/images/STELLAR-removebg-preview.png" alt="new_watch_release">
           <p>StellarWrist isn't just about a watch. It's about it's people and it's customers. We aren't here to sell you a time keeping piece but rather give you a lifetime supply of something that you would love looking at. We not only strive to keep our customer's happy, but we also strive to bring happiness to any and all people all around the world. Our programmes and clinics help us to promote our brand aswell as joy to those who interact.At this company time meets luxury.</p>
         </div>
       </div>
@@ -39,7 +39,7 @@
     <div id="images_of_leadership">
 
       <div class="card" id="card_border_none" style="width: 18rem;">
-        <img id="image_of_company_employees" src="https://i.postimg.cc/NfCWKR47/C12-C2-Codi-Kader-1-removebg-preview.png" class="card-img-top" alt="codi_kader_image">
+        <img id="image_of_company_employees" src="https://i.ibb.co/zF8dqb4/C12-C2-Codi-Kader-2-square-removebg-preview.png" class="card-img-top" alt="codi_kader_image">
         <div class="card-body" id="card_text_for_leadership">
           <h3>
             <p class="card-text" id="leadership_names"><span style="color: #ffc851">Codi Kader</span></p>
@@ -50,7 +50,7 @@
       
       <!-- card 2 -->
       <div class="card" id="card_border_none" style="width: 18rem;">
-        <img id="image_of_company_employees" src="https://i.postimg.cc/CM7yV3n2/C12-Keeno-Fourie-1-removebg-preview.png" class="card-img-top" alt="keeno_fourie_image">
+        <img id="image_of_company_employees" src="https://i.ibb.co/qMZLv65/C12-Keeno-Fourie-1-removebg-preview.png" class="card-img-top" alt="keeno_fourie_image">
         <div class="card-body" id="card_text_for_leadership">
           <h3>
             <p class="card-text" id="leadership_names"><span style="color: #ffc851">Keeno Fourie</span></p>
@@ -82,7 +82,7 @@
       <div class="card mb-3" style="max-width: 540px;" id="card_for_the_news">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="https://i.postimg.cc/7LH3rmsM/new-watch-removebg-preview.png" class="img-fluid rounded-start" alt="new_watch_release">
+            <img src="https://i.ibb.co/SxX6dd0/0124-1024x1024-2x-removebg-preview.png" class="img-fluid rounded-start" alt="new_watch_release">
           </div>
           <div class="col-md-8">
             <div class="card-body" id="new_watch_news">
@@ -98,7 +98,7 @@
       <div class="card mb-3" style="max-width: 540px;" id="card_for_the_news">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="https://i.postimg.cc/QC2BZ7zX/STELLAR-removebg-preview.png" class="img-fluid rounded-start" alt="new_watch_release">
+            <img src="https://i.ibb.co/hfHhK6F/Screenshot-2024-01-29-121909-removebg-preview-1.png" class="img-fluid rounded-start" alt="new_watch_release">
           </div>
           <div class="col-md-8">
             <div class="card-body" id="new_watch_news">
@@ -129,7 +129,7 @@
 
   <!-- images -->
   <div id="all_images_of_partners">
-    <img id="image_of_partners" src="https://i.postimg.cc/zGxC54LD/311161219-557180089742242-801233208154029769-nkfehb-removebg-preview-1.png" alt="img">
+    <img id="image_of_partners" src="https://i.ibb.co/8xLM4FG/Screenshot-2024-01-29-110631-removebg-preview.png" alt="img">
   </div>
 
     </div>

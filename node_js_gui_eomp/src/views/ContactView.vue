@@ -3,7 +3,7 @@
         <div id="contact_page">
 
             <div id="get_in_touch">
-                <img id="contact_us_logo" src="https://i.postimg.cc/WbmPRgn2/STELLAR-removebg-preview.png" alt="logo">
+                <img id="contact_us_logo" src="../assets/images/STELLAR-removebg-preview.png" alt="logo">
                 <h3>keenofourie@gmail.com</h3>
                 <h3>codikader7@gmail.com</h3>
                 <p id="get_in_touch_form_text">Get in touch with us using our email addresses or drop a few words in the following form.</p>

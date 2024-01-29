@@ -3,7 +3,7 @@
     <!-- landing page image and text -->
     <div id="image_for_landing_page">
       <h1 id="landing_page_text">STELLARWRIST</h1>
-      <img id="landing_page_image" class="img-fluid" src="https://i.postimg.cc/nrhR3HMY/810166-removebg-preview-1.png" alt="landing_page_image">
+      <img id="landing_page_image" class="img-fluid" src="https://i.ibb.co/hfHhK6F/Screenshot-2024-01-29-121909-removebg-preview-1.png" alt="landing_page_image">
       <h3 id="landing_page_text">"WHERE TIME MEETS LUXURY"</h3>
     </div>
     <!-- promotions and sales -->
@@ -33,7 +33,7 @@
 
       <!-- media query image -->
       <div id="div_media_image">
-        <img id="media_query_image" src="https://i.postimg.cc/ydZmJcyk/s-zoom-removebg-preview.png" class="img-fluid" alt="watch_1_image">
+        <img id="media_query_image" src="https://i.ibb.co/HKJF3M3/Nismo-R35-RS-Chrono-1695209383989.webp" class="img-fluid" alt="watch_1_image">
       </div>
       
 
@@ -44,28 +44,28 @@
         <div id="carouselExample" class="carousel slide container-fluid">
           <div class="carousel-inner container-fluid">
             <div class="carousel-item active">
-              <img id="watch_image_carousel" src="https://i.postimg.cc/ydZmJcyk/s-zoom-removebg-preview.png" class="img-fluid" alt="watch_1_image">
+              <img id="watch_image_carousel" src="https://i.ibb.co/HKJF3M3/Nismo-R35-RS-Chrono-1695209383989.webp" class="img-fluid" alt="watch_1_image">
             </div>
             <div class="carousel-item">
-              <img id="watch_image_carousel" src="https://i.postimg.cc/T3Yx9cS5/s-zasoom-removebg-preview.png" class="img-fluid" alt="watch_1_image">
+              <img id="watch_image_carousel" src="https://i.ibb.co/rm60F2p/Non-Gyro-Petronas-63-S-Yellow-Black-Red-Leather-Strap-RS-Chono-1669215188-74eec2d2-5c3c-4492-a241-62.webp" class="img-fluid" alt="watch_1_image">
             </div>
             <div class="carousel-item">
-              <img id="watch_image_carousel" src="https://i.postimg.cc/zvkRWjbX/s-zoom-1-removebg-preview.png" class="img-fluid" alt="watch_2_image">
+              <img id="watch_image_carousel" src="https://i.ibb.co/SQxwjhL/Bayer-795-M-RS-Chrono-1695209443446.webp" class="img-fluid" alt="watch_2_image">
             </div>
             <div class="carousel-item">
-              <img id="watch_image_carousel" src="https://i.postimg.cc/k5WmsX9D/s-qzoom-1-removebg-preview.png" class="img-fluid" alt="watch_2_image">
+              <img id="watch_image_carousel" src="https://i.ibb.co/dcSygJX/Gyro-Speedtail-765-Orange-Black-Orange-Leather-Strap-RS-Chono-1669251861-78b53d0e-ebbf-4049-89cf-939.webp" class="img-fluid" alt="watch_2_image">
             </div>
             <div class="carousel-item">
-              <img id="watch_image_carousel" src="https://i.postimg.cc/RF53D8wZ/s-zoom-2-removebg-preview.png" class="img-fluid" alt="watch_3_image">
+              <img id="watch_image_carousel" src="https://i.ibb.co/L8Jwbf3/Petronas-E63-RS-Chrono-1695209147562.webp" class="img-fluid" alt="watch_3_image">
             </div>
             <div class="carousel-item">
-              <img id="watch_image_carousel" src="https://i.postimg.cc/HWyh7PYs/s-zoom-k2-removebg-preview.png" class="img-fluid" alt="watch_3_image">
+              <img id="watch_image_carousel" src="https://i.ibb.co/Zx84xBW/Shelby-GT500-RS-Chrono-1695209063343.webp" class="img-fluid" alt="watch_3_image">
             </div>
             <div class="carousel-item">
-              <img id="watch_image_carousel" src="https://i.postimg.cc/T2zhCBqL/s-zoom-3-removebg-preview.png" class="img-fluid" alt="watch_4_image">
+              <img id="watch_image_carousel" src="https://i.ibb.co/frYZY2N/Speedtail-765-White-RS-Chrono-1695209036774.webp" class="img-fluid" alt="watch_4_image">
             </div>
             <div class="carousel-item">
-              <img id="watch_image_carousel" src="https://i.postimg.cc/zfQxyT4g/s-zoom-4-removebg-preview.png" class="img-fluid" alt="watch_4_image">
+              <img id="watch_image_carousel" src="https://i.ibb.co/GWG8ZPK/Vorsprung-RS7-Green-RS-Chrono-1695208956117.webp" class="img-fluid" alt="watch_4_image">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
